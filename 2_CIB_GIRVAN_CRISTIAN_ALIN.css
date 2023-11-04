@@ -1,0 +1,44 @@
+h1{
+  font-size: 15px;
+  text-transform: uppercase;
+  
+}
+h2{
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+button{
+  padding: 10px 24px;
+  background-color:greenyellow;
+  font-size:15px;
+  font-style: oblique;
+  border-radius:8px;
+ 
+}
+
+button:hover {
+background-color:yellow;
+color: white;
+}
+
+body{
+  background-color:cadetblue;
+  background-image:url("silverttx.jpg");
+  background-position: center;
+}
+
+p1{
+  font-size: 15px;
+  text-transform: uppercase;
+
+}
+
+p2{
+  font-size: 15px;
+  text-transform:uppercase;
+}
+
+video2{
+  visibility:hidden;
+}
