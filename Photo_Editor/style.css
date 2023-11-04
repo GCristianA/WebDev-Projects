@@ -1,0 +1,64 @@
+.sidebar{
+  height: 100%;
+  width: 400px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:darkorange;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.drop-down{
+  font-size: 20px;
+  float: right;
+  position: relative;
+  top: 10px;
+}
+
+/* #style{
+  background-color: red;
+} */
+
+
+body {background-color: coral;}
+
+
+br{
+  user-select: none;
+}
+
+#foto-file{
+  display: none;
+}
+
+#btn{
+  width: 150px;
+  height: 50px;
+  text-align: center;
+}
+
+.image{
+  position: relative;
+  left: 500px;
+  
+  user-select: none;
+}
+
+#colorize-color-picker{
+  display: none;
+}
+
+h2{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  
+}
+
+h1{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+ 
+}
+

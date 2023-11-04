@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+
+  <title>Editor foto</title>
+
+  <!-- Script css -->
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Buton pentru filtre -->
+
+  <div class="sidebar">
+    <div class="image_filters">
+
+
+      <h2>Editor foto</h2>
+
+      <hr>
+      </hr>
+      <h1 type="button" data-toggle="collapse" data-target="#filters">Filtre imagine <span class="drop-down"></span>
+      </h1>
+
+      <div class="collapse" id="filters">
+        <button class='btn btn-primary' id="btn" style="font-size: 20px;" onclick="grayscale()">GrayScale</button>
+        <button class='btn btn-primary' id="btn" style="font-size: 20px;" onclick="bright()"> Bright </button>
+        <br>
+        <br>
+        <button class='btn btn-primary' id="btn" style="font-size: 20px;" onclick="dark()">Darken</button>
+        <button class="btn btn-primary" id="btn" style="font-size: 20px;" onclick="blur_effect()">Efect blur</button>
+        <br>
+        <br>
+        <button class='btn btn-primary' id="btn" style="font-size: 20px;" onclick="emboss()">Emboss</button>
+        <button class='btn btn-primary' id="btn" style="font-size: 20px;" onclick="sharp()">Sharpen</button>
+        <br>
+        <br>
+      </div>
+      <div class="breaks">
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <hr>
+    </hr>
+
+
+    <!-- Buton exportare si importare -->
+
+    <div class="import_and_export">
+      <h1 type="button" data-toggle="collapse" data-target="#import_export">Import si export imagine <span
+          class="drop-down"></span></h1>
+      <div class="import_and_export_buttons">
+        <div class="collapse" id="import_export">
+          <div class="btn btn-primary" style="font-size: 20px;" onclick="selectImage()">
+            <input type="file" id="foto-file" accept="image/png" />
+            Importare imagine
+          </div>
+
+          <br> </br>
+          <button class="btn btn-primary" style="font-size: 20px;" onclick="download()">Salveaza imagine</button>
+        </div>
+      </div>
+    </div>
+    <div class="breaks">
+      <br>
+      <br>
+    </div>
+
+    <hr>
+    </hr>
+
+    <!-- Introducere editare -->
+
+    <div class="edit">
+      <h1 type="button" data-toggle="collapse" data-target="#edit">Editare imagine<span class="drop-down"></span></h1>
+      <div class="collapse" id="edit">
+        <button class="btn btn-primary" style="font-size: 20px;" id="btn" onclick="crop()">Decupare</button>
+        <button class="btn btn-primary" style="font-size: 20px;" id="btn" onclick="flip_img()">Rotire</button>
+        <br><br>
+        <button class="btn btn-primary" onclick="makeTransparent()" style="font-size: 20px;" id="btn">
+          <div id="color-preview"></div>Transparent
+        </button>
+        <input type="color" id="colorize-color-picker" value="#00000" oninput="makeColorize(this)">
+        <button class="btn btn-primary" style="font-size: 20px;" id="btn" onclick="openColorPicker()">Coloreaza</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="img-container">
+    <img id="foto-image" class="image" />
+  </div>
+
+
+
+
+  <!-- Script JS -->
+
+
+  <script
+    src="https://rawcdn.githack.com/kousik19/foto.js/045defe1a5ce06220e084e4e6f6fbaccb7621841/foto.min.js"></script>
+
+  <script src="script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
