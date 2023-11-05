@@ -15,8 +15,8 @@ This projects features:
 
 This projects features:
 
->image filters
+>Image filters
 
->export/import images feature
+>Export/import images feature
 
->posibility to edit the image
+>Posibility to edit the image
